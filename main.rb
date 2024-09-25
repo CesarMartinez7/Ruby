@@ -16,13 +16,12 @@ begin
     else
         begin
             final=numero1/numero2
-            puts numero1/numero2
         rescue ZeroDivisionError => e
             puts "Error #{e} "
             exit()
         end
     end
 
-rescue ZeroDivisionError => e
+rescue StandardError => e
     puts "ERROR: #{e}"
 end
